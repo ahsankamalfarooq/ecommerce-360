@@ -1,4 +1,4 @@
-// import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+// import { createAsyncThunk, ProductListSlice } from '@reduxjs/toolkit';
 // import { fetchCount } from './counterAPI';
 
 // const initialState = {
@@ -16,7 +16,7 @@
 //   }
 // );
 
-// export const counterSlice = createSlice({
+// export const ProductListSlice = createSlice({
 //   name: 'counter',
 //   initialState,
 //   // The `reducers` field lets us define reducers and generate associated actions
@@ -41,19 +41,20 @@
 //   },
 // });
 
-// export const { increment } = counterSlice.actions;
+// export const { increment } = ProductListSlice.actions;
 
 // export const selectCount = (state) => state.counter.value;
 
 
-// export default counterSlice.reducer;
+// export default ProductListSlice.reducer;
 
 
-///////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { fetchCount } from './counterAPI';
+import { fetchCount } from './ProductListAPI';
 
 const initialState = {
   value: 0,
@@ -94,5 +95,3 @@ export const { increment } = counterSlice.actions;
 export const selectCount = (state) => state.counter.value;
 
 export default counterSlice.reducer;
-
-
