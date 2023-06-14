@@ -1,0 +1,9 @@
+npx create-react-app ecommerce-360 --template redux
+
+
+
+
+
+
+npm i tailwindcss@latest
+npx tailwindcss init
